@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>QuizBoard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css" >
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/script.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>QuizBoard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/script.js"></script>
 </head>
+
 <body>
-    <header>
-      <h1>JS Quiz Board-1</h1>
-         <p>
-           
-         </p>
-    </header>
-    
+  <center>
+    <div class="container">
+      <div class="jumbotron">
+        <header>
+          <h1>JS Quiz Board-1</h1>
+          <p>
+            Hello user! Welcome.<br>
+            Well in this webpage you get yo answer questions on javascript and later learn of your scores.<br>
+          </p>
+          <button type="button" name="click me" id="click">click me</button>
+        </header>
+      </div>
+  </center>
+  <div class="jumbotron">
+    <div class="questions">
+      <h2>Answer all Questions.</h2>
+      <center>
+        <form class="quiz" onsubmit="return onSubmit()">
+        <div class="question">
+          <p>1:What tags contain Javascript code?</p>
+          <input type="radio" name="question1" value="incorrect">body<br>
+          <input type="radio" name="question1" value="incorrect">style<br>
+          <input type="radio" name="question1" value="correct">script<br>
+          <input type="radio" name="question1" value="incorrect">code
+        </div>
+        <div class="question">
+        <p>2:What are the three core languages in web pages?<br><span>Select all necessary</span></p>
+          <input type="checkbox" name="question2" value="correct">html<br>
+          <input type="checkbox" name="question2" value="correct">css<br>
+          <input type="checkbox" name="question2" value="incorrect">php<br>
+          <input type="checkbox" name="question2" value="incorrect">ruby<br>
+          <input type="checkbox" name="question2" value="incorrect">python<br>
+          <input type="checkbox" name="question2" value="correct">javascript<br><br><br>
+        </div>
+        <div class="question">
+        <p>3:Why is the script tag placed just before the closing body tag?</p>
+          <input type="radio" name="question3" value="incorrect">Just for fun<br>
+          <input type="radio" name="question3" value="incorrect">To comply with the standards<br>
+          <input type="radio" name="question3" value="correct">To let the html content run first before the javascript
+          code<br>
+          <input type="radio" name="question3" value="incorrect">To ensure proper indentation in betweeen the tags
+        </div>
+        <div class="question">
+        <p>4:What characters can not be used in variable names?</p>
+          <input type="radio" name="question4" value="incorrect">letters<br>
+          <input type="radio" name="question4" value="incorrect">underscore<br>
+          <input type="radio" name="question4" value="incorrect">numbers<br>
+          <input type="radio" name="question4" value="correct">special symbols(&,%,etc.)
+        </div>
+        <div class="question">
+        <p>5:What is a floating point number?</p>
+          <input type="radio" name="question5" value="incorrect">is an integer<br>
+          <input type="radio" name="question5" value="incorrect">is always smaller than 0<br>
+          <input type="radio" name="question5" value="correct">is allowed to have a decimal place<br>
+          <input type="radio" name="question5" value="incorrect">is always positive
+        </div>
+        <button type="submit">Submit</button>
+
+        </form>
+    </div>
+  </div>
+  </center>
 </body>
+
 </html>
