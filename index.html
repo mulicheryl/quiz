@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="css/bootstrap.css" rel="stylesheet" type="text.css">
-  <link href="css/styles.css" rel="stylesheet" type="text.css">
+  <link href="css/styles.css" rel="stylesheet">
   <title>Quiz</title>
 </head>
 
 <body>
+  <div id="particles-js">
   <div id="container">
+  <div class="bar bar1"></div>
+  <div class="ball"></div>
+  <div class="bar bar2"></div>
+  <div>
     <header>
       <h1>Quiz Board</h1>
       <p>Questions on <strong>JavaScript</strong></p>
@@ -24,16 +29,16 @@
       <input type="radio" id="q1" name="q1" value="c">c. body;<br>
       <input type="radio" id="q1" name="q1" value="d">d. link<br>
 
-      <h3>2. What are the three core languages in web pages?</h3>
+      <h3>2. Which one is a core language in web pages?</h3>
       <input type="radio" id="q2" name="q2" value="a">a. JavaScript<br>
-      <input type="radio" id="q2" name="q2" value="b">b. css<br>
-      <input type="radio" id="q2" name="q2" value="c">c. html<br>
-      <input type="radio" id="q2" name="q2" value="d">d. ruby<br>
+      <input type="radio" id="q2" name="q2" value="b">b. java<br>
+      <input type="radio" id="q2" name="q2" value="c">c. ruby<br>
+      <input type="radio" id="q2" name="q2" value="d">d. c+<br>
 
       <h3>3. Why is the script tag placed just before the closing body tag?</h3>
       <input type="radio" id="q3" name="q3" value="a">a. for proper indentation<br>
       <input type="radio" id="q3" name="q3" value="b">b. just for fun<br>
-      <input type="radio" id="q3" name="q3" value="c">c. to let the javascript code run first<br>
+      <input type="radio" id="q3" name="q3" value="c">c. to let the html code run first<br>
       <input type="radio" id="q3" name="q3" value="d">d. to comply with the standards<br>
 
       <h3>4. What characters can not be used in variable names?</h3>
@@ -52,9 +57,10 @@
         <button class="btn" type="button" onclick="gradeMe()">Grade Me</button>
       </div>
     </form>
-    <div id="particles-js"></div>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+    </div>
+    </div>
+    <script src="js/anime.js"></script>
+    <script src="js/anime.min.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/script.js"></script>
 </body>

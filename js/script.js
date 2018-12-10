@@ -42,7 +42,7 @@ function gradeMe() {
     var correctScore = 0;
 
 
-    if (ansOne === "d") {
+    if (ansOne === "b") {
         correctScore += 10;
     }
     if (ansTwo === "a") {
@@ -51,10 +51,10 @@ function gradeMe() {
     if (ansThree === "c") {
         correctScore += 10;
     }
-    if (ansFour === "b") {
+    if (ansFour === "d") {
         correctScore += 10;
     }
-    if (ansFive === "d") {
+    if (ansFive === "b") {
         correctScore += 10;
     }
     alert(correctScore);

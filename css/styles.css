@@ -1,12 +1,33 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+body {
+    background: goldenrod;
+    text-align: center;
 }
-h3{
-    font-size: 50px;
+
+.container {
+    width: 500px;
+    display: inline-block;
+    transform: translateY(200px);
 }
-#particles-js{
-    height:100%;
-    background: #f00;
+
+.bar {
+    background: black;
+    width: 10px;
+    height: 100px;
+}
+
+.bar1 {
+    float: left;
+}
+
+.bar2 {
+    float: right;
+}
+
+.ball {
+    background: black;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 45px;
+    left: 10px;
 }
