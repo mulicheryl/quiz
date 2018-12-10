@@ -5,64 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text.css">
   <link href="css/styles.css" rel="stylesheet">
   <title>Quiz</title>
 </head>
 
 <body>
-  <div id="particles-js">
+  <center>
   <div id="container">
-  <div class="bar bar1"></div>
-  <div class="ball"></div>
-  <div class="bar bar2"></div>
-  <div>
-    <header>
-      <h1>Quiz Board</h1>
-      <p>Questions on <strong>JavaScript</strong></p>
-    </header>
+    <div id="jumbotron">
+      <header>
+        <h1>Quiz Board</h1>
+        <p>Questions on <strong>JavaScript</strong></p>
+      </header>
+    </div>
     <div id="results"></div>
     <form name="quizForm">
-      <h3>1. What tags contain the JavaScript code?</h3>
-      <input type="radio" id="q1" name="q1" value="a">a. js<br>
-      <input type="radio" id="q1" name="q1" value="b">b. script<br>
-      <input type="radio" id="q1" name="q1" value="c">c. body;<br>
-      <input type="radio" id="q1" name="q1" value="d">d. link<br>
-
-      <h3>2. Which one is a core language in web pages?</h3>
-      <input type="radio" id="q2" name="q2" value="a">a. JavaScript<br>
-      <input type="radio" id="q2" name="q2" value="b">b. java<br>
-      <input type="radio" id="q2" name="q2" value="c">c. ruby<br>
-      <input type="radio" id="q2" name="q2" value="d">d. c+<br>
-
-      <h3>3. Why is the script tag placed just before the closing body tag?</h3>
-      <input type="radio" id="q3" name="q3" value="a">a. for proper indentation<br>
-      <input type="radio" id="q3" name="q3" value="b">b. just for fun<br>
-      <input type="radio" id="q3" name="q3" value="c">c. to let the html code run first<br>
-      <input type="radio" id="q3" name="q3" value="d">d. to comply with the standards<br>
-
-      <h3>4. What characters can not be used in variable names?</h3>
-      <input type="radio"id="q4" name="q4" value="a">a. letters<br>
-      <input type="radio"id="q4" name="q4" value="b">b. underscore sign<br>
-      <input type="radio"id="q4" name="q4" value="c">a. numbers<br>
-      <input type="radio"id="q4" name="q4" value="d">b. special symbols<br>
-
-      <h3>5. What is a floating point number?</h3>
-      <input type="radio" id="q5" name="q5" value="a">a. is always smaller than 0<br>
-      <input type="radio" id="q5" name="q5" value="b">b. is allowed to have a decimal place<br>
-      <input type="radio" id="q5" name="q5" value="c">c. is always positive<br>
-      <input type="radio" id="q5" name="q5" value="d">d. is an integer<br>
+      <div id="jumbotron">
+        <h3>1. What tags contain the JavaScript code?</h3>
+        <input type="radio" id="q1" name="q1" value="a">a. js<br>
+        <input type="radio" id="q1" name="q1" value="b">b. script<br>
+        <input type="radio" id="q1" name="q1" value="c">c. body;<br>
+        <input type="radio" id="q1" name="q1" value="d">d. link<br>
+      </div>
+      <div id="jumbotron">
+        <h3>2. Which one is a core language in web pages?</h3>
+        <input type="radio" id="q2" name="q2" value="a">a. JavaScript<br>
+        <input type="radio" id="q2" name="q2" value="b">b. java<br>
+        <input type="radio" id="q2" name="q2" value="c">c. ruby<br>
+        <input type="radio" id="q2" name="q2" value="d">d. c+<br>
+      </div>
+      <div id="jumbotron">
+        <h3>3. Why is the script tag placed just before the closing body tag?</h3>
+        <input type="radio" id="q3" name="q3" value="a">a. for proper indentation<br>
+        <input type="radio" id="q3" name="q3" value="b">b. just for fun<br>
+        <input type="radio" id="q3" name="q3" value="c">c. to let the html code run first<br>
+        <input type="radio" id="q3" name="q3" value="d">d. to comply with the standards<br>
+      </div>
+      <div id="jumbotron">
+        <h3>4. What characters can not be used in variable names?</h3>
+        <input type="radio" id="q4" name="q4" value="a">a. letters<br>
+        <input type="radio" id="q4" name="q4" value="b">b. underscore sign<br>
+        <input type="radio" id="q4" name="q4" value="c">a. numbers<br>
+        <input type="radio" id="q4" name="q4" value="d">b. special symbols<br>
+      </div>
+      <div id="jumbotron">
+        <h3>5. What is a floating point number?</h3>
+        <input type="radio" id="q5" name="q5" value="a">a. is always smaller than 0<br>
+        <input type="radio" id="q5" name="q5" value="b">b. is allowed to have a decimal place<br>
+        <input type="radio" id="q5" name="q5" value="c">c. is always positive<br>
+        <input type="radio" id="q5" name="q5" value="d">d. is an integer<br>
+      </div>
       <br><br>
       <div id="submitBtn">
         <button class="btn" type="button" onclick="gradeMe()">Grade Me</button>
       </div>
     </form>
-    </div>
-    </div>
-    <script src="js/anime.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/script.js"></script>
+  </div>
+  </div>
+ <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/script.js"></script>
+  </center>
 </body>
 
 </html>

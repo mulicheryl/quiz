@@ -1,33 +1,19 @@
-body {
-    background: goldenrod;
-    text-align: center;
+body{
+    font-family: 'Unlock',cursive;
 }
-
-.container {
-    width: 500px;
-    display: inline-block;
-    transform: translateY(200px);
+h1{
+    font-size: 75px;
 }
-
-.bar {
-    background: black;
-    width: 10px;
-    height: 100px;
+p{
+    font-size: 50px;
 }
-
-.bar1 {
-    float: left;
+h3{
+    font-size: 20px;
 }
-
-.bar2 {
-    float: right;
-}
-
-.ball {
-    background: black;
-    width: 10px;
-    height: 10px;
-    position: relative;
-    top: 45px;
-    left: 10px;
+.btn{
+    height: 60px;
+    width: 80px;
+    color: black;
+    background-color: azure;
+    box-shadow: 0.8px 0.5px black;
 }
