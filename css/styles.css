@@ -20,7 +20,7 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid whitesmoke;
 
 }
 h3{
@@ -29,7 +29,9 @@ h3{
 }
 
 #start{
-    border: 10px solid darkred;
+    border: 10px solid black;
+    color: whitesmoke;
+    background-color: firebrick;
     border-radius: 10px;
     text-decoration: none;
     text-transform: uppercase;
